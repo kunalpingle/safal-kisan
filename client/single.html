@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Safal Kisan | Single
+    </title>
+    <link href="/static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <!--theme-style-->
+    <link href="/static/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!--//theme-style-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+    <script src="/static/js/jquery.min.js"></script>
+
+    <!-- Custom Theme files -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="application/x-javascript">
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!--fonts-->
+    <link href='//fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+    <!--//fonts-->
+    <!-- start menu -->
+    <link href="/static/css/memenu.css" rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript" src="/static/js/memenu.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".memenu").memenu();
+        });
+    </script>
+    <script src="/static/js/imagezoom.js"></script>
+</head>
+
+<body ng-app="myApp" data-ng-controller="CartController">
+    <!--header-->
+    <% include "partials/header.html" %>
+        <div class="container">
+
+        </div>
+        </div>
+        <!-- grow -->
+        <div class="grow">
+            <div class="container">
+                <h2> Product Details</h2>
+            </div>
+        </div>
+        <!-- grow -->
+        <div class="product">
+            <div class="container">
+                <div class="product-price1">
+                    <div class="top-sing">
+                        <div class="col-md-7 single-top">
+                            <div class="flexslider">
+                                <ul class="slides">
+                                    <% for image in product.fields.image %>
+                                        <li data-thumb="images/si1.jpg">
+                                            <div class="thumb-image">
+                                                <img src="<$ image.fields.file.url $>" data-imagezoom="true" class="img-responsive" data-ng-model="product_image_url" data-ng-init="product_image_url='<$ product.fields.image[0].fields.file.url $>'">
+                                            </div>
+                                        </li>
+                                        <% endfor %>
+                                </ul>
+                            </div>
+
+                            <div class="clearfix"> </div>
+                        </div>
+                        <div class="col-md-5 single-top-in simpleCart_shelfItem">
+                            <div class="single-para ">
+                                <input type="text" hidden data-ng-model="product_title" data-ng-init="product_title='<$ product.fields.title $>'">
+                                <input type="text" hidden data-ng-model="product_id" data-ng-init="product_id='<$ product.sys.id $>'">
+                                <h4>
+                                    <$ product.fields.title $>
+                                </h4>
+                                <div class="star-on">
+                                    <div class="review">
+                                        <a href="#"> 100 customer review </a>
+                                    </div>
+                                    <div class="clearfix"> </div>
+                                </div>
+                                <input type="text" hidden data-ng-model="product_price" data-ng-init="product_price='<$ product.fields.price $>'">
+                                <h5 class="item_price">Rs.
+                                    <$ product.fields.price $>
+                                </h5>
+                                </br>
+                                <div>
+                                    <span>Quantity *</span>
+                                    <input type="text" required data-ng-model="quantity" placeholder="1">
+                                </div>
+
+                                <input type="submit" class="add-cart item_add" data-ng-click="addItems()" data-ng-model="count" value="ADD TO CART" data-ng-hide="btnFlag">
+                                <div data-ng-if="btnFlag">
+                                    <a href="/checkout">Go to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+
+            <div class="clearfix"> </div>
+        </div>
+        </div>
+        <!--footer-->
+        <% include "partials/footer.html" %>
+            </div>
+            <script type="text/javascript" src="/static/js/angular.min.js"></script>
+            <script type="text/javascript" src="/static/js/cart.js"></script>
+</body>
+
+</html>

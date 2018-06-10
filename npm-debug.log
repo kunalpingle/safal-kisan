@@ -1,0 +1,755 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'contentful-management',
+1 verbose cli   '--save' ]
+2 info using npm@1.4.3
+3 info using node@v0.10.26
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 warn package.json safal-kisan@0.0.0 No repository field.
+6 warn package.json safal-kisan@0.0.0 No README data
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'contentful-management', null ]
+9 verbose cache add name=undefined spec="contentful-management" args=["contentful-management",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'contentful-management',
+10 verbose parsed url   path: 'contentful-management',
+10 verbose parsed url   href: 'contentful-management' }
+11 silly lockFile d994d611-contentful-management contentful-management
+12 verbose lock contentful-management C:\Users\abc\AppData\Roaming\npm-cache\d994d611-contentful-management.lock
+13 silly lockFile d994d611-contentful-management contentful-management
+14 silly lockFile d994d611-contentful-management contentful-management
+15 verbose addNamed [ 'contentful-management', '' ]
+16 verbose addNamed [ null, '*' ]
+17 silly lockFile 456098f0-contentful-management contentful-management@
+18 verbose lock contentful-management@ C:\Users\abc\AppData\Roaming\npm-cache\456098f0-contentful-management.lock
+19 silly addNameRange { name: 'contentful-management', range: '*', hasData: false }
+20 verbose url raw contentful-management
+21 verbose url resolving [ 'https://registry.npmjs.org/', './contentful-management' ]
+22 verbose url resolved https://registry.npmjs.org/contentful-management
+23 info trying registry request attempt 1 at 13:12:41
+24 verbose etag "5a9e71e0-788ec"
+25 http GET https://registry.npmjs.org/contentful-management
+26 http 304 https://registry.npmjs.org/contentful-management
+27 silly registry.get cb [ 304,
+27 silly registry.get   { date: 'Sun, 15 Apr 2018 07:42:44 GMT',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     'cache-control': 'max-age=300',
+27 silly registry.get     etag: '"5a9e71e0-788ec"',
+27 silly registry.get     age: '0',
+27 silly registry.get     connection: 'keep-alive',
+27 silly registry.get     'x-served-by': 'cache-ams4445-AMS',
+27 silly registry.get     'x-cache': 'MISS',
+27 silly registry.get     'x-cache-hits': '0',
+27 silly registry.get     'x-timer': 'S1523778164.386834,VS0,VE280',
+27 silly registry.get     vary: 'Accept-Encoding, Accept' } ]
+28 verbose etag contentful-management from cache
+29 silly addNameRange number 2 { name: 'contentful-management', range: '*', hasData: true }
+30 silly addNameRange versions [ 'contentful-management',
+30 silly addNameRange   [ '0.0.1',
+30 silly addNameRange     '0.0.3',
+30 silly addNameRange     '0.0.4',
+30 silly addNameRange     '0.0.5',
+30 silly addNameRange     '0.0.6',
+30 silly addNameRange     '0.0.7',
+30 silly addNameRange     '0.1.0',
+30 silly addNameRange     '0.1.1',
+30 silly addNameRange     '0.2.0',
+30 silly addNameRange     '0.3.0',
+30 silly addNameRange     '0.4.0',
+30 silly addNameRange     '0.5.0',
+30 silly addNameRange     '0.6.0',
+30 silly addNameRange     '0.7.0',
+30 silly addNameRange     '0.7.1',
+30 silly addNameRange     '0.8.0',
+30 silly addNameRange     '0.8.1',
+30 silly addNameRange     '0.8.2',
+30 silly addNameRange     '0.8.3',
+30 silly addNameRange     '0.8.4',
+30 silly addNameRange     '0.8.5',
+30 silly addNameRange     '0.8.6',
+30 silly addNameRange     '1.0.0',
+30 silly addNameRange     '1.0.1',
+30 silly addNameRange     '1.0.2',
+30 silly addNameRange     '1.0.3',
+30 silly addNameRange     '1.0.4',
+30 silly addNameRange     '1.0.5',
+30 silly addNameRange     '1.0.6',
+30 silly addNameRange     '1.1.0',
+30 silly addNameRange     '1.1.1',
+30 silly addNameRange     '1.1.2',
+30 silly addNameRange     '1.1.3',
+30 silly addNameRange     '1.1.4',
+30 silly addNameRange     '1.1.5',
+30 silly addNameRange     '1.1.6',
+30 silly addNameRange     '1.1.7',
+30 silly addNameRange     '1.1.8',
+30 silly addNameRange     '1.1.9',
+30 silly addNameRange     '1.1.10',
+30 silly addNameRange     '1.1.11',
+30 silly addNameRange     '1.1.12',
+30 silly addNameRange     '1.1.13',
+30 silly addNameRange     '1.1.14',
+30 silly addNameRange     '1.2.0',
+30 silly addNameRange     '1.2.1',
+30 silly addNameRange     '1.3.0',
+30 silly addNameRange     '1.3.1',
+30 silly addNameRange     '2.1.0',
+30 silly addNameRange     '2.1.1',
+30 silly addNameRange     '2.1.2',
+30 silly addNameRange     '3.0.0',
+30 silly addNameRange     '3.0.1',
+30 silly addNameRange     '3.0.2',
+30 silly addNameRange     '3.0.3',
+30 silly addNameRange     '3.0.4',
+30 silly addNameRange     '3.1.0',
+30 silly addNameRange     '3.1.1',
+30 silly addNameRange     '3.2.0',
+30 silly addNameRange     '3.3.0',
+30 silly addNameRange     '3.3.3',
+30 silly addNameRange     '3.3.1',
+30 silly addNameRange     '3.3.2',
+30 silly addNameRange     '3.3.4',
+30 silly addNameRange     '3.3.5',
+30 silly addNameRange     '3.3.6',
+30 silly addNameRange     '3.4.0',
+30 silly addNameRange     '3.5.0',
+30 silly addNameRange     '3.5.1',
+30 silly addNameRange     '3.6.0',
+30 silly addNameRange     '3.6.1',
+30 silly addNameRange     '3.7.0',
+30 silly addNameRange     '3.7.1',
+30 silly addNameRange     '3.7.2',
+30 silly addNameRange     '3.7.3',
+30 silly addNameRange     '3.7.4',
+30 silly addNameRange     '3.7.5',
+30 silly addNameRange     '3.7.6',
+30 silly addNameRange     '3.8.0',
+30 silly addNameRange     '3.9.0',
+30 silly addNameRange     '3.9.1',
+30 silly addNameRange     '3.9.2',
+30 silly addNameRange     '3.9.3',
+30 silly addNameRange     '3.10.0',
+30 silly addNameRange     '4.0.0',
+30 silly addNameRange     '4.0.0-rc2',
+30 silly addNameRange     '3.11.0',
+30 silly addNameRange     '3.11.1',
+30 silly addNameRange     '3.12.0',
+30 silly addNameRange     '4.0.1',
+30 silly addNameRange     '4.0.2',
+30 silly addNameRange     '4.0.3',
+30 silly addNameRange     '4.1.0',
+30 silly addNameRange     '4.1.1',
+30 silly addNameRange     '4.1.2',
+30 silly addNameRange     '4.1.3',
+30 silly addNameRange     '4.1.4',
+30 silly addNameRange     '4.2.0',
+30 silly addNameRange     '4.2.1',
+30 silly addNameRange     '4.2.2',
+30 silly addNameRange     '5.0.0-beta0',
+30 silly addNameRange     '5.0.0-beta1',
+30 silly addNameRange     '5.0.0-beta2' ] ]
+31 verbose addNamed [ 'contentful-management', '4.2.2' ]
+32 verbose addNamed [ '4.2.2', '4.2.2' ]
+33 silly lockFile e84d3c9f-contentful-management-4-2-2 contentful-management@4.2.2
+34 verbose lock contentful-management@4.2.2 C:\Users\abc\AppData\Roaming\npm-cache\e84d3c9f-contentful-management-4-2-2.lock
+35 silly lockFile e84d3c9f-contentful-management-4-2-2 contentful-management@4.2.2
+36 silly lockFile e84d3c9f-contentful-management-4-2-2 contentful-management@4.2.2
+37 silly lockFile 456098f0-contentful-management contentful-management@
+38 silly lockFile 456098f0-contentful-management contentful-management@
+39 silly resolved [ { name: 'contentful-management',
+39 silly resolved     version: '4.2.2',
+39 silly resolved     description: 'Client for Contentful\'s Content Management API',
+39 silly resolved     homepage: 'https://www.contentful.com/developers/documentation/content-management-api/',
+39 silly resolved     main: './dist/contentful-management.node.js',
+39 silly resolved     module: './dist/es-modules/contentful-management.js',
+39 silly resolved     engines: { node: '>=4.7' },
+39 silly resolved     repository:
+39 silly resolved      { type: 'git',
+39 silly resolved        url: 'https://github.com/contentful/contentful-management.js.git' },
+39 silly resolved     author: { name: 'Contentful', email: 'opensource@contentful.com' },
+39 silly resolved     license: 'MIT',
+39 silly resolved     tonicExampleFilename: 'tonic-example.js',
+39 silly resolved     scripts:
+39 silly resolved      { clean: 'rimraf dist',
+39 silly resolved        build: 'npm run clean && npm run build:modules && npm run build:standalone',
+39 silly resolved        'build:modules': 'BABEL_ENV=modules babel lib -d dist/es-modules/',
+39 silly resolved        'build:standalone': 'webpack && NODE_ENV=production webpack',
+39 silly resolved        'build:standalone:log': 'NODE_ENV=production WEBPACK_MODE=log webpack --json --profile --progress > webpack-build-log.json && webpack-bundle-analyzer webpack-build-log.json',
+39 silly resolved        'docs:build': 'jsdoc -c jsdoc.json',
+39 silly resolved        'docs:dev': 'npm run build && npm run docs:build',
+39 silly resolved        'docs:watch': 'nodemon --exec npm run docs:dev -w lib',
+39 silly resolved        'docs:publish': 'npm run docs:build && ./node_modules/contentful-sdk-jsdoc/bin/publish-docs.sh contentful-management.js contentful-management',
+39 silly resolved        lint: 'eslint lib test',
+39 silly resolved        format: 'eslint --fix lib test',
+39 silly resolved        pretest: 'rimraf coverage && npm run lint',
+39 silly resolved        test: 'npm run test:cover && npm run test:integration && npm run test:browser-local && npm run test:size',
+39 silly resolved        'test:ci': './node_modules/contentful-sdk-core/bin/test-ci.sh',
+39 silly resolved        'test:cover': 'BABEL_ENV=test babel-node ./node_modules/istanbul/lib/cli.js cover ./test/runner | tap-spec',
+39 silly resolved        'test:unit': 'BABEL_ENV=test babel-node ./test/runner | tap-spec',
+39 silly resolved        'test:debug': 'BABEL_ENV=test babel-node debug ./test/runner',
+39 silly resolved        'test:integration': 'BABEL_ENV=test babel-node ./test/integration/integration-tests.js',
+39 silly resolved        'test:browser-local': 'BABEL_ENV=test karma start karma.conf.local.js',
+39 silly resolved        'test:browser-remote': 'BABEL_ENV=test karma start karma.conf.saucelabs.js',
+39 silly resolved        'test:e2e': 'node test/e2e/index.js',
+39 silly resolved        'test:simulate-ci': 'trevor',
+39 silly resolved        'test:size': 'bundlesize',
+39 silly resolved        'browser-coverage': 'npm run test:cover && opener coverage/lcov-report/index.html',
+39 silly resolved        prepublish: 'in-publish && npm run build || not-in-publish',
+39 silly resolved        postpublish: 'npm run docs:publish && npm run clean',
+39 silly resolved        'semantic-release': 'semantic-release pre && npm publish && semantic-release post',
+39 silly resolved        'devdep:build': 'pushd ../contentful-sdk-core && npm run build && popd',
+39 silly resolved        'devdep:clean': 'pushd ../contentful-sdk-core && npm run clean && popd',
+39 silly resolved        'devdep:install': 'npm run devdep:build && rm -rf node_modules/contentful-sdk-core && npm install ../contentful-sdk-core && npm run devdep:clean',
+39 silly resolved        'devdep:uninstall': 'npm run devdep:clean && rimraf node_modules/contentful-sdk-core',
+39 silly resolved        precommit: 'npm run lint',
+39 silly resolved        prepush: 'npm run test:unit' },
+39 silly resolved     files: [ 'dist', 'tonic-example.js' ],
+39 silly resolved     dependencies:
+39 silly resolved      { '@contentful/axios': '^0.18.0',
+39 silly resolved        'contentful-sdk-core': '^5.0.4',
+39 silly resolved        lodash: '^4.17.4' },
+39 silly resolved     devDependencies:
+39 silly resolved      { 'babel-cli': '^6.7.5',
+39 silly resolved        'babel-core': '^6.22.1',
+39 silly resolved        'babel-eslint': '^8.0.1',
+39 silly resolved        'babel-loader': '^7.1.1',
+39 silly resolved        'babel-plugin-inline-replace-variables': '^1.3.1',
+39 silly resolved        'babel-plugin-lodash': '^3.2.11',
+39 silly resolved        'babel-plugin-rewire': '^1.0.0',
+39 silly resolved        'babel-plugin-transform-object-rest-spread': '^6.23.0',
+39 silly resolved        'babel-preset-env': '^1.6.0',
+39 silly resolved        'babel-preset-es2015': '^6.6.0',
+39 silly resolved        'babel-register': '^6.7.2',
+39 silly resolved        'babel-template': '^6.22.0',
+39 silly resolved        'babel-types': '^6.22.0',
+39 silly resolved        'babili-webpack-plugin': '^0.1.2',
+39 silly resolved        'blue-tape': '^1.0.0',
+39 silly resolved        bundlesize: '^0.15.3',
+39 silly resolved        'contentful-sdk-jsdoc': '^2.2.0',
+39 silly resolved        'core-js': '^2.5.1',
+39 silly resolved        coveralls: '^3.0.0',
+39 silly resolved        'cz-conventional-changelog': '^2.0.0',
+39 silly resolved        eslint: '^4.2.0',
+39 silly resolved        'eslint-config-standard': '^10.2.1',
+39 silly resolved        'eslint-plugin-import': '^2.7.0',
+39 silly resolved        'eslint-plugin-node': '^5.1.0',
+39 silly resolved        'eslint-plugin-promise': '^3.4.2',
+39 silly resolved        'eslint-plugin-standard': '^3.0.1',
+39 silly resolved        husky: '^0.14.3',
+39 silly resolved        'in-publish': '^2.0.0',
+39 silly resolved        istanbul: '^1.0.0-alpha.2',
+39 silly resolved        jsdoc: '^3.4.0',
+39 silly resolved        json: '^9.0.3',
+39 silly resolved        karma: '^1.4.1',
+39 silly resolved        'karma-babel-preprocessor': '^7.0.0',
+39 silly resolved        'karma-chrome-launcher': '^2.0.0',
+39 silly resolved        'karma-firefox-launcher': '^1.0.1',
+39 silly resolved        'karma-sauce-launcher': '^1.1.0',
+39 silly resolved        'karma-tap': '^3.1.1',
+39 silly resolved        'karma-webpack': '^2.0.2',
+39 silly resolved        'lodash-webpack-plugin': '^0.11.4',
+39 silly resolved        mkdirp: '^0.5.1',
+39 silly resolved        'require-all': '^2.2.0',
+39 silly resolved        rimraf: '^2.6.0',
+39 silly resolved        'selenium-webdriver': '^3.5.0',
+39 silly resolved        'semantic-release': '^8.2.0',
+39 silly resolved        sinon: '^4.0.1',
+39 silly resolved        'tap-spec': '^4.1.1',
+39 silly resolved        trevor: '^2.2.0',
+39 silly resolved        webpack: '^3.2.0',
+39 silly resolved        'webpack-bundle-analyzer': '^2.8.3' },
+39 silly resolved     config: { commitizen: [Object] },
+39 silly resolved     bundlesize: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+39 silly resolved     readme: '# contentful-management.js\n\n> JavaScript SDK for [Contentful\'s](https://www.contentful.com) Content Management API.\n\n[![npm](https://img.shields.io/npm/v/contentful-management.svg)](https://www.npmjs.com/package/contentful-management)\n[![Build Status](https://travis-ci.org/contentful/contentful-management.js.svg?branch=master)](https://travis-ci.org/contentful/contentful-management.js)\n[![Coverage Status](https://coveralls.io/repos/github/contentful/contentful-management.js/badge.svg?branch=master)](https://coveralls.io/github/contentful/contentful-management.js?branch=master)\n[![Dependency Status](https://david-dm.org/contentful/contentful-management.js.svg)](https://david-dm.org/contentful/contentful-management.js)\n[![devDependency Status](https://david-dm.org/contentful/contentful-management.js/dev-status.svg)](https://david-dm.org/contentful/contentful-management.js#info=devDependencies)\n\n[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)\n[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)\n[![npm downloads](https://img.shields.io/npm/dm/contentful-management.svg)](http://npm-stat.com/charts.html?package=contentful-management)\n[![gzip bundle size](http://img.badgesize.io/https://unpkg.com/contentful-management/dist/contentful-management.browser.min.js?compression=gzip\n)](https://unpkg.com/contentful-management/dist/contentful-management.browser.min.js)\n\n[Contentful](https://www.contentful.com) provides a content infrastructure for digital teams to power content in websites, apps, and devices. Unlike a CMS, Contentful was built to integrate with the modern software stack. It offers a central hub for structured content, powerful management and delivery APIs, and a customizable web app that enable developers and content creators to ship digital products faster.\n\n## Features\n\n- Content management and retrieval through Contentful\'s [Content Management API](https://www.contentful.com/developers/docs/references/content-management-api/).\n- Built in rate limiting with recovery procedures\n- Asset processing helpers\n\n## Supported environments\n\nBrowsers and Node.js:\n- Chrome\n- Firefox\n- Edge\n- Safari\n- node.js (4.x, 6.x)\n- IE11 (with [legacy version](#legacy-browsers) of the library)\n\nOther browsers should also work, but at the moment we\'re only running automated tests on the browsers and Node.js versions specified above.\n\n# Getting started\n\nTo get started with the Contentful Management JS SDK you\'ll need to install it, and then get credentials which will allow you to access your content in Contentful.\n\n- [Installation](#installation)\n- [Authentication](#authentication)\n- [Using ES6 import](#using-es6-import)\n- [Your first request](#your-first-request)\n- [Troubleshooting](#troubleshooting)\n- [Documentation/References](#documentationreferences)\n\n## Installation\n\n### Node:\n\nUsing [npm](http://npmjs.org):\n\n``` sh\nnpm install contentful-management\n```\n\nUsing [yarn](https://yarnpkg.com/lang/en/):\n\n``` sh\nyarn add contentful-management\n```\n\n### Browser:\n\nFor browsers, we recommend to download the SDK via npm or yarn to ensure 100% availability.\n\nIf you\'d like to use a standalone built file you can use the following script tag or download it from [jsDelivr](https://www.jsdelivr.com/package/npm/contentful-management), under the `dist` directory:\n\n``` html\n<script src="https://cdn.jsdelivr.net/npm/contentful-management@latest/dist/contentful-management.browser.min.js"></script>\n```\n**It\'s not recommended to use the above URL for production.**\n\nUsing `contentful@latest` will always get you the latest version, but you can also specify a specific version number:\n\n``` html\n<!-- Avoid using the following url for production. You can not rely on its availability. -->\n<script src="https://cdn.jsdelivr.net/npm/contentful-management@4.0.1/dist/contentful-management.browser.min.js"></script>\n```\n\nThe Contentful Management SDK will be accessible via the `contentfulManagement` global variable.\n\nCheck the [releases](https://github.com/contentful/contentful-management.js/releases) page to know which versions are available.\n\n### Legacy browsers:\n\nThis library also comes with a legacy version to support Internet Explorer 11 and other older browsers. It already contains a polyfill for Promises.\n\nTo support legacy browsers in your application, use `contentful-management.legacy.min.js` instead of `contentful-management.browser.min.js`\n\n## Authentication\n\nTo get content from Contentful, an app should authenticate with an OAuth bearer token.\n\nIf you want to use this SDK for a simple tool or a local app that you won\'t redistribute or make available to other users, you can get an API key for the Management API at our [Authentication page](https://www.contentful.com/developers/docs/references/authentication/).\n\nIf you\'d like to create an app which would make use of this SDK but that would be available for other users, where they could authenticate with their own Contentful credentials, make sure to also check out the section about [Creating an OAuth Application](https://www.contentful.com/developers/docs/references/authentication/#creating-an-oauth-20-application)\n\n## Using ES6 import\nYou can use the es6 import with the SDK as follow\n\n```js\n// import createClient directly\nimport {createClient} from \'contentful-management\'\nvar client = createClient({\n  // This is the access token for this space. Normally you get the token in the Contentful web app\n  accessToken: \'YOUR_ACCESS_TOKEN\'\n})\n//....\n```\nOR\n```js\n// import everything from contentful\nimport * as contentful from \'contentful-management\'\nvar client = contentful.createClient({\n  // This is the access token for this space. Normally you get the token in the Contentful web app\n  accessToken: \'YOUR_ACCESS_TOKEN\'\n})\n// ....\n```\n\n## Your first request\n\nThe following code snippet is the most basic one you can use to get content from Contentful with this SDK:\n\n```js\nvar contentful = require(\'contentful-management\')\nvar client = contentful.createClient({\n  // This is the access token for this space. Normally you get the token in the Contentful web app\n  accessToken: \'YOUR_ACCESS_TOKEN\'\n})\n\n// This API call will request a space with the specified ID\nclient.getSpace(\'spaceId\')\n.then((space) => {\n  // Now that we have a space, we can get entries from that space\n  space.getEntries()\n  .then((entries) => {\n    console.log(entries.items)\n  })\n\n  // let\'s get a content type\n  space.getContentType(\'product\')\n  .then((contentType) => {\n    // and now let\'s update its name\n    contentType.name = \'New Product\'\n    contentType.update()\n    .then((updatedContentType) => {\n      console.log(\'Update was successful\')\n    })\n  })\n})\n```\n\nYou can try and change the above example at [Tonic](https://tonicdev.com/npm/contentful-management).\n\n## Troubleshooting\n\n- **I can\'t Install the package via npm**\n\t- Check your internet connection\n\t- It is called `contentful-management` and not `contenful-management` ¯\\\\\\_(ツ)_/¯\n - **Can I use the SDK in react native projects**\n  \t- Yes it is possible\n - **I get the error: Unable to resolve module `http`**\n \t- Our SDK is supplied as node and browser version. Most non-node environments, like React Native, act like a browser. To force using of the browser version, you can require it via: `const { createClient } = require(\'contentful-management/dist/contentful-management.browser.min.js\')`\t\n- **Can I use it with typescript?**\n\t- Yes, type definition file coming soon\n- **I am not sure what payload to send when creating and entity (Asset/Entity/ContentType etc...)**\n\t- Check the Content Management API [docs](https://www.contentful.com/developers/docs/references/content-management-api/) or the examples in the reference [docs](https://contentful.github.io/contentful-management.js)\n\t- Feel free to open an issue if you didn\'t find what you need in the above links\n- 😱 **something is wrong what should I do**\n\t- If it is a bug related to the code create a GitHub issue and make sure to remove any credential for your code before sharing it.\n\t- If you need to share your credentials, for example you have an issue with your space, please create a support ticket.\n\t- Please **do not** share your management token in a GitHub issue\n\n## Documentation/References\n\nTo help you get the most out of this SDK, we\'ve prepared reference documentation, tutorials and other examples that will help you learn and understand how to use this library.\n\n### Configuration\n\nThe `createClient` method supports several options you may set to achieve the expected behavior:\n\n```js\ncontentful.createClient({\n  ... your config here ...\n})\n```\n\n#### accessToken (required)\nYour CMA access token.\n\n#### host (default: `\'api.contentful.com\'`)\nSet the host used to build the request URI\'s.\n\n#### hostUpload (default: `\'upload.contentful.com\'`)\nSet the host used to build the upload related request uri\'s.\n\n#### basePath (default: ``)\nThis path gets appended to the host to allow request urls like `https://gateway.example.com/contentful/` for custom gateways/proxies.\n\n#### httpAgent (default: `undefined`)\nCustom agent to perform HTTP requests. Find further information in the [axios request config documentation](https://github.com/mzabriskie/axios#request-config).\n\n#### httpsAgent (default: `undefined`)\nCustom agent to perform HTTPS requests. Find further information in the [axios request config documentation](https://github.com/mzabriskie/axios#request-config).\n\n#### headers (default: `{}`)\nAdditional headers to attach to the requests. We add/overwrite the following headers:\n\n* Content-Type: `application/vnd.contentful.management.v1+json`\n* X-Contentful-User-Agent: `sdk contentful-management.js/1.2.3; platform node.js/1.2.3; os macOS/1.2.3`\n (Automatically generated)\n\n#### proxy (default: `undefined`)\nAxios proxy configuration. See the [axios request config documentation](https://github.com/mzabriskie/axios#request-config) for further information about the supported values.\n\n#### retryOnError (default: `true`)\nBy default, this SDK is retrying requests which resulted in a 500 server error and 429 rate limit response. Set this to `false` to disable this behavior.\n\n#### logHandler (default: `function (level, data) {}`)\nErrors and warnings will be logged by default to the node or browser console. Pass your own log handler to intercept here and handle errors, warnings and info on your own.\n\n### Reference documentation\n\nThe [Contentful\'s JS SDK reference](https://contentful.github.io/contentful-management.js) documents what objects and methods are exposed by this library, what arguments they expect and what kind of data is returned.\n\nMost methods also have examples which show you how to use them.\n\nYou can start by looking at the top level `contentfulManagement` namespace.\n\nThe `ContentfulClientAPI` namespace defines the methods at the Client level which allow you to create and get spaces.\n\nThe `ContentfulSpaceAPI` namespace defines the methods at the Space level which allow you to create and get entries, assets, content types and other possible entities.\n\nThe `Entry`, `Asset` and `ContentType` namespaces show you the instance methods you can use on each of these entities, once you retrieve them from the server.\n\n> From version 1.0.0 onwards, you can access documentation for a specific version by visiting `https://contentful.github.io/contentful-management.js/contentful-management/<VERSION>`\n\n### Contentful JavaScript resources\n\nRead the [Contentful for JavaScript](https://www.contentful.com/developers/docs/javascript/) page for Tutorials, Demo Apps, and more information on other ways of using JavaScript with Contentful\n\n### REST API reference\n\nThis library is a wrapper around our Contentful Management REST API. Some more specific details such as search parameters and pagination are better explained on the [REST API reference](https://www.contentful.com/developers/docs/references/content-management-api/), and you can also get a better understanding of how the requests look under the hood.\n\n### Legacy contentful-management.js\n\nFor versions prior to 1.0.0, you can access documentation at [https://github.com/contentful/contentful-management.js/tree/legacy](https://github.com/contentful/contentful.js/tree/legacy)\n\n## Versioning\n\nThis project strictly follows [Semantic Versioning](http://semver.org/) by use of [semantic-release](https://github.com/semantic-release/semantic-release).\n\nThis means that new versions are released automatically as fixes, features or breaking changes are released.\n\nYou can check the changelog on the [releases](https://github.com/contentful/contentful-management.js/releases) page.\n\n## Migration from contentful-management.js 3.x\n\nThe bundle for browsers is now called `contentful-management.browser.min.js` to mark it clearly as browser only bundle. If you need to support IE 11 or other old browsers, you may use the `contentful-management.legacy.min.js`. Node will automatically use the `contentful-management.node.min.js` while bundlers like Webpack will resolve to the new ES-modules version of the library.\n\nNo changes to the API of the library were made.\n\n## Migration from contentful-management.js 1.x and older\n\ncontentful.js 1.x was a major rewrite, with some API changes. While the base functionality remains the same, some method names have changed, as well as some internal behaviors.\n\nSee the [migration guide](MIGRATION.md) for more information.\n\n## Support\n\nIf you have a problem with this library, please file an [issue](https://github.com/contentful/contentful-management.js/issues/new) here on GitHub.\n\nIf you have other problems with Contentful not related to this library, you can contact [Customer Support](https://support.contentful.com).\n\n## Contributing\n\nSee [CONTRIBUTING.md](CONTRIBUTING.md)\n\n## License\n\nMIT\n',
+39 silly resolved     readmeFilename: 'README.md',
+39 silly resolved     bugs: { url: 'https://github.com/contentful/contentful-management.js/issues' },
+39 silly resolved     _id: 'contentful-management@4.2.2',
+39 silly resolved     _from: 'contentful-management@' } ]
+40 info install contentful-management@4.2.2 into E:\safal-kisan
+41 info installOne contentful-management@4.2.2
+42 warn engine contentful-management@4.2.2: wanted: {"node":">=4.7"} (current: {"node":"v0.10.26","npm":"1.4.3"})
+43 info E:\safal-kisan\node_modules\contentful-management unbuild
+44 info preuninstall contentful-management@4.2.2
+45 info uninstall contentful-management@4.2.2
+46 verbose true,E:\safal-kisan\node_modules,E:\safal-kisan\node_modules unbuild contentful-management@4.2.2
+47 info postuninstall contentful-management@4.2.2
+48 verbose tar unpack C:\Users\abc\AppData\Roaming\npm-cache\contentful-management\4.2.2\package.tgz
+49 silly lockFile b1bbf3c4-de-modules-contentful-management tar://E:\safal-kisan\node_modules\contentful-management
+50 verbose lock tar://E:\safal-kisan\node_modules\contentful-management C:\Users\abc\AppData\Roaming\npm-cache\b1bbf3c4-de-modules-contentful-management.lock
+51 silly lockFile 6ad20597-ful-management-4-2-2-package-tgz tar://C:\Users\abc\AppData\Roaming\npm-cache\contentful-management\4.2.2\package.tgz
+52 verbose lock tar://C:\Users\abc\AppData\Roaming\npm-cache\contentful-management\4.2.2\package.tgz C:\Users\abc\AppData\Roaming\npm-cache\6ad20597-ful-management-4-2-2-package-tgz.lock
+53 silly gunzTarPerm modes [ '755', '644' ]
+54 silly gunzTarPerm extractEntry package.json
+55 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+56 silly gunzTarPerm extractEntry README.md
+57 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+58 silly gunzTarPerm extractEntry tonic-example.js
+59 silly gunzTarPerm modified mode [ 'tonic-example.js', 438, 420 ]
+60 silly gunzTarPerm extractEntry dist/contentful-management.browser.js
+61 silly gunzTarPerm modified mode [ 'dist/contentful-management.browser.js', 438, 420 ]
+62 silly gunzTarPerm extractEntry dist/contentful-management.browser.min.js
+63 silly gunzTarPerm modified mode [ 'dist/contentful-management.browser.min.js', 438, 420 ]
+64 silly gunzTarPerm extractEntry dist/contentful-management.legacy.js
+65 silly gunzTarPerm modified mode [ 'dist/contentful-management.legacy.js', 438, 420 ]
+66 silly gunzTarPerm extractEntry dist/contentful-management.legacy.min.js
+67 silly gunzTarPerm modified mode [ 'dist/contentful-management.legacy.min.js', 438, 420 ]
+68 silly gunzTarPerm extractEntry dist/contentful-management.node.js
+69 silly gunzTarPerm modified mode [ 'dist/contentful-management.node.js', 438, 420 ]
+70 silly gunzTarPerm extractEntry dist/contentful-management.node.min.js
+71 silly gunzTarPerm modified mode [ 'dist/contentful-management.node.min.js', 438, 420 ]
+72 silly gunzTarPerm extractEntry dist/contentful-management.browser.js.map
+73 silly gunzTarPerm modified mode [ 'dist/contentful-management.browser.js.map', 438, 420 ]
+74 silly gunzTarPerm extractEntry dist/contentful-management.legacy.js.map
+75 silly gunzTarPerm modified mode [ 'dist/contentful-management.legacy.js.map', 438, 420 ]
+76 silly gunzTarPerm extractEntry dist/contentful-management.node.js.map
+77 silly gunzTarPerm modified mode [ 'dist/contentful-management.node.js.map', 438, 420 ]
+78 silly gunzTarPerm extractEntry dist/es-modules/contentful-management.js
+79 silly gunzTarPerm modified mode [ 'dist/es-modules/contentful-management.js', 438, 420 ]
+80 silly gunzTarPerm extractEntry dist/es-modules/create-contentful-api.js
+81 silly gunzTarPerm modified mode [ 'dist/es-modules/create-contentful-api.js', 438, 420 ]
+82 silly gunzTarPerm extractEntry dist/es-modules/create-space-api.js
+83 silly gunzTarPerm modified mode [ 'dist/es-modules/create-space-api.js', 438, 420 ]
+84 silly gunzTarPerm extractEntry dist/es-modules/enhance-with-methods.js
+85 silly gunzTarPerm modified mode [ 'dist/es-modules/enhance-with-methods.js', 438, 420 ]
+86 silly gunzTarPerm extractEntry dist/es-modules/error-handler.js
+87 silly gunzTarPerm modified mode [ 'dist/es-modules/error-handler.js', 438, 420 ]
+88 silly gunzTarPerm extractEntry dist/es-modules/instance-actions.js
+89 silly gunzTarPerm modified mode [ 'dist/es-modules/instance-actions.js', 438, 420 ]
+90 silly gunzTarPerm extractEntry dist/es-modules/entities/api-key.js
+91 silly gunzTarPerm modified mode [ 'dist/es-modules/entities/api-key.js', 438, 420 ]
+92 silly gunzTarPerm extractEntry dist/es-modules/entities/index.js
+93 silly gunzTarPerm modified mode [ 'dist/es-modules/entities/index.js', 438, 420 ]
+94 silly gunzTarPerm extractEntry dist/es-modules/entities/locale.js
+95 silly gunzTarPerm modified mode [ 'dist/es-modules/entities/locale.js', 438, 420 ]
+96 silly gunzTarPerm extractEntry dist/es-modules/entities/organization.js
+97 silly gunzTarPerm modified mode [ 'dist/es-modules/entities/organization.js', 438, 420 ]
+98 silly gunzTarPerm extractEntry dist/es-modules/entities/entry.js
+99 silly gunzTarPerm modified mode [ 'dist/es-modules/entities/entry.js', 438, 420 ]
+100 silly gunzTarPerm extractEntry dist/es-modules/entities/role.js
+101 silly gunzTarPerm modified mode [ 'dist/es-modules/entities/role.js', 438, 420 ]
+102 silly gunzTarPerm extractEntry dist/es-modules/entities/snapshot.js
+103 silly gunzTarPerm modified mode [ 'dist/es-modules/entities/snapshot.js', 438, 420 ]
+104 silly gunzTarPerm extractEntry dist/es-modules/entities/space-membership.js
+105 silly gunzTarPerm modified mode [ 'dist/es-modules/entities/space-membership.js', 438, 420 ]
+106 silly gunzTarPerm extractEntry dist/es-modules/entities/space.js
+107 silly gunzTarPerm modified mode [ 'dist/es-modules/entities/space.js', 438, 420 ]
+108 silly gunzTarPerm extractEntry dist/es-modules/entities/ui-extension.js
+109 silly gunzTarPerm modified mode [ 'dist/es-modules/entities/ui-extension.js', 438, 420 ]
+110 silly gunzTarPerm extractEntry dist/es-modules/entities/editor-interface.js
+111 silly gunzTarPerm modified mode [ 'dist/es-modules/entities/editor-interface.js', 438, 420 ]
+112 silly gunzTarPerm extractEntry dist/es-modules/entities/upload.js
+113 silly gunzTarPerm modified mode [ 'dist/es-modules/entities/upload.js', 438, 420 ]
+114 silly gunzTarPerm extractEntry dist/es-modules/entities/content-type.js
+115 silly gunzTarPerm modified mode [ 'dist/es-modules/entities/content-type.js', 438, 420 ]
+116 silly gunzTarPerm extractEntry dist/es-modules/entities/user.js
+117 silly gunzTarPerm modified mode [ 'dist/es-modules/entities/user.js', 438, 420 ]
+118 silly gunzTarPerm extractEntry dist/es-modules/entities/asset.js
+119 silly gunzTarPerm modified mode [ 'dist/es-modules/entities/asset.js', 438, 420 ]
+120 silly gunzTarPerm extractEntry dist/es-modules/entities/webhook.js
+121 silly gunzTarPerm modified mode [ 'dist/es-modules/entities/webhook.js', 438, 420 ]
+122 silly gunzTarPerm extractEntry dist/es-modules/entities/personal-access-token.js
+123 silly gunzTarPerm modified mode [ 'dist/es-modules/entities/personal-access-token.js', 438, 420 ]
+124 silly lockFile b1bbf3c4-de-modules-contentful-management tar://E:\safal-kisan\node_modules\contentful-management
+125 silly lockFile b1bbf3c4-de-modules-contentful-management tar://E:\safal-kisan\node_modules\contentful-management
+126 silly lockFile 6ad20597-ful-management-4-2-2-package-tgz tar://C:\Users\abc\AppData\Roaming\npm-cache\contentful-management\4.2.2\package.tgz
+127 silly lockFile 6ad20597-ful-management-4-2-2-package-tgz tar://C:\Users\abc\AppData\Roaming\npm-cache\contentful-management\4.2.2\package.tgz
+128 info preinstall contentful-management@4.2.2
+129 verbose readDependencies using package.json deps
+130 verbose readDependencies using package.json deps
+131 verbose cache add [ '@contentful/axios@^0.18.0', null ]
+132 verbose cache add name=undefined spec="@contentful/axios@^0.18.0" args=["@contentful/axios@^0.18.0",null]
+133 verbose parsed url { protocol: null,
+133 verbose parsed url   slashes: null,
+133 verbose parsed url   auth: null,
+133 verbose parsed url   host: null,
+133 verbose parsed url   port: null,
+133 verbose parsed url   hostname: null,
+133 verbose parsed url   hash: null,
+133 verbose parsed url   search: null,
+133 verbose parsed url   query: null,
+133 verbose parsed url   pathname: '@contentful/axios@^0.18.0',
+133 verbose parsed url   path: '@contentful/axios@^0.18.0',
+133 verbose parsed url   href: '@contentful/axios@^0.18.0' }
+134 verbose cache add [ 'contentful-sdk-core@^5.0.4', null ]
+135 verbose cache add name=undefined spec="contentful-sdk-core@^5.0.4" args=["contentful-sdk-core@^5.0.4",null]
+136 verbose parsed url { protocol: null,
+136 verbose parsed url   slashes: null,
+136 verbose parsed url   auth: null,
+136 verbose parsed url   host: null,
+136 verbose parsed url   port: null,
+136 verbose parsed url   hostname: null,
+136 verbose parsed url   hash: null,
+136 verbose parsed url   search: null,
+136 verbose parsed url   query: null,
+136 verbose parsed url   pathname: 'contentful-sdk-core@^5.0.4',
+136 verbose parsed url   path: 'contentful-sdk-core@^5.0.4',
+136 verbose parsed url   href: 'contentful-sdk-core@^5.0.4' }
+137 verbose cache add name="contentful-sdk-core" spec="^5.0.4" args=["contentful-sdk-core","^5.0.4"]
+138 verbose parsed url { protocol: null,
+138 verbose parsed url   slashes: null,
+138 verbose parsed url   auth: null,
+138 verbose parsed url   host: null,
+138 verbose parsed url   port: null,
+138 verbose parsed url   hostname: null,
+138 verbose parsed url   hash: null,
+138 verbose parsed url   search: null,
+138 verbose parsed url   query: null,
+138 verbose parsed url   pathname: '^5.0.4',
+138 verbose parsed url   path: '^5.0.4',
+138 verbose parsed url   href: '^5.0.4' }
+139 verbose addNamed [ 'contentful-sdk-core', '^5.0.4' ]
+140 verbose addNamed [ null, '>=5.0.4-0 <6.0.0-0' ]
+141 silly lockFile 92a4f0d2-contentful-sdk-core-5-0-4 contentful-sdk-core@^5.0.4
+142 verbose lock contentful-sdk-core@^5.0.4 C:\Users\abc\AppData\Roaming\npm-cache\92a4f0d2-contentful-sdk-core-5-0-4.lock
+143 verbose cache add [ 'lodash@^4.17.4', null ]
+144 verbose cache add name=undefined spec="lodash@^4.17.4" args=["lodash@^4.17.4",null]
+145 verbose parsed url { protocol: null,
+145 verbose parsed url   slashes: null,
+145 verbose parsed url   auth: null,
+145 verbose parsed url   host: null,
+145 verbose parsed url   port: null,
+145 verbose parsed url   hostname: null,
+145 verbose parsed url   hash: null,
+145 verbose parsed url   search: null,
+145 verbose parsed url   query: null,
+145 verbose parsed url   pathname: 'lodash@^4.17.4',
+145 verbose parsed url   path: 'lodash@^4.17.4',
+145 verbose parsed url   href: 'lodash@^4.17.4' }
+146 verbose cache add name="lodash" spec="^4.17.4" args=["lodash","^4.17.4"]
+147 verbose parsed url { protocol: null,
+147 verbose parsed url   slashes: null,
+147 verbose parsed url   auth: null,
+147 verbose parsed url   host: null,
+147 verbose parsed url   port: null,
+147 verbose parsed url   hostname: null,
+147 verbose parsed url   hash: null,
+147 verbose parsed url   search: null,
+147 verbose parsed url   query: null,
+147 verbose parsed url   pathname: '^4.17.4',
+147 verbose parsed url   path: '^4.17.4',
+147 verbose parsed url   href: '^4.17.4' }
+148 verbose addNamed [ 'lodash', '^4.17.4' ]
+149 verbose addNamed [ null, '>=4.17.4-0 <5.0.0-0' ]
+150 silly lockFile f25314eb-lodash-4-17-4 lodash@^4.17.4
+151 verbose lock lodash@^4.17.4 C:\Users\abc\AppData\Roaming\npm-cache\f25314eb-lodash-4-17-4.lock
+152 verbose cache add name="" spec="contentful/axios@^0.18.0" args=["","contentful/axios@^0.18.0"]
+153 verbose parsed url { protocol: null,
+153 verbose parsed url   slashes: null,
+153 verbose parsed url   auth: null,
+153 verbose parsed url   host: null,
+153 verbose parsed url   port: null,
+153 verbose parsed url   hostname: null,
+153 verbose parsed url   hash: null,
+153 verbose parsed url   search: null,
+153 verbose parsed url   query: null,
+153 verbose parsed url   pathname: 'contentful/axios@^0.18.0',
+153 verbose parsed url   path: 'contentful/axios@^0.18.0',
+153 verbose parsed url   href: 'contentful/axios@^0.18.0' }
+154 verbose cache add name="contentful/axios" spec="^0.18.0" args=["contentful/axios","^0.18.0"]
+155 verbose parsed url { protocol: null,
+155 verbose parsed url   slashes: null,
+155 verbose parsed url   auth: null,
+155 verbose parsed url   host: null,
+155 verbose parsed url   port: null,
+155 verbose parsed url   hostname: null,
+155 verbose parsed url   hash: null,
+155 verbose parsed url   search: null,
+155 verbose parsed url   query: null,
+155 verbose parsed url   pathname: '^0.18.0',
+155 verbose parsed url   path: '^0.18.0',
+155 verbose parsed url   href: '^0.18.0' }
+156 verbose addNamed [ 'contentful/axios', '^0.18.0' ]
+157 verbose addNamed [ null, '>=0.18.0-0 <0.19.0-0' ]
+158 silly lockFile 94d38e6e-contentful-axios-0-18-0 contentful/axios@^0.18.0
+159 verbose lock contentful/axios@^0.18.0 C:\Users\abc\AppData\Roaming\npm-cache\94d38e6e-contentful-axios-0-18-0.lock
+160 silly addNameRange { name: 'contentful-sdk-core',
+160 silly addNameRange   range: '>=5.0.4-0 <6.0.0-0',
+160 silly addNameRange   hasData: false }
+161 silly addNameRange { name: 'lodash', range: '>=4.17.4-0 <5.0.0-0', hasData: false }
+162 verbose url raw lodash
+163 verbose url resolving [ 'https://registry.npmjs.org/', './lodash' ]
+164 verbose url resolved https://registry.npmjs.org/lodash
+165 info trying registry request attempt 1 at 13:12:43
+166 verbose etag "5acfde34-2b6d9"
+167 http GET https://registry.npmjs.org/lodash
+168 silly addNameRange { name: 'contentful/axios',
+168 silly addNameRange   range: '>=0.18.0-0 <0.19.0-0',
+168 silly addNameRange   hasData: false }
+169 verbose url raw contentful-sdk-core
+170 verbose url resolving [ 'https://registry.npmjs.org/', './contentful-sdk-core' ]
+171 verbose url resolved https://registry.npmjs.org/contentful-sdk-core
+172 info trying registry request attempt 1 at 13:12:43
+173 verbose etag "5a9e6bdf-3ad61"
+174 http GET https://registry.npmjs.org/contentful-sdk-core
+175 verbose url raw contentful/axios
+176 verbose url resolving [ 'https://registry.npmjs.org/', './contentful/axios' ]
+177 verbose url resolved https://registry.npmjs.org/contentful/axios
+178 info trying registry request attempt 1 at 13:12:43
+179 http GET https://registry.npmjs.org/contentful/axios
+180 http 304 https://registry.npmjs.org/lodash
+181 silly registry.get cb [ 304,
+181 silly registry.get   { date: 'Sun, 15 Apr 2018 07:42:45 GMT',
+181 silly registry.get     via: '1.1 varnish',
+181 silly registry.get     'cache-control': 'max-age=300',
+181 silly registry.get     etag: '"5acfde34-2b6d9"',
+181 silly registry.get     age: '11149',
+181 silly registry.get     connection: 'keep-alive',
+181 silly registry.get     'x-served-by': 'cache-ams4151-AMS',
+181 silly registry.get     'x-cache': 'HIT',
+181 silly registry.get     'x-cache-hits': '1',
+181 silly registry.get     'x-timer': 'S1523778166.673280,VS0,VE1',
+181 silly registry.get     vary: 'Accept-Encoding, Accept' } ]
+182 verbose etag lodash from cache
+183 silly addNameRange number 2 { name: 'lodash', range: '>=4.17.4-0 <5.0.0-0', hasData: true }
+184 silly addNameRange versions [ 'lodash',
+184 silly addNameRange   [ '0.1.0',
+184 silly addNameRange     '0.2.0',
+184 silly addNameRange     '0.2.1',
+184 silly addNameRange     '0.2.2',
+184 silly addNameRange     '0.3.0',
+184 silly addNameRange     '0.3.1',
+184 silly addNameRange     '0.3.2',
+184 silly addNameRange     '0.4.0',
+184 silly addNameRange     '0.4.1',
+184 silly addNameRange     '0.4.2',
+184 silly addNameRange     '0.5.0-rc.1',
+184 silly addNameRange     '0.5.0',
+184 silly addNameRange     '0.5.1',
+184 silly addNameRange     '0.5.2',
+184 silly addNameRange     '0.6.0',
+184 silly addNameRange     '0.6.1',
+184 silly addNameRange     '0.7.0',
+184 silly addNameRange     '0.8.0',
+184 silly addNameRange     '0.8.1',
+184 silly addNameRange     '0.8.2',
+184 silly addNameRange     '0.9.0',
+184 silly addNameRange     '0.9.1',
+184 silly addNameRange     '0.9.2',
+184 silly addNameRange     '0.10.0',
+184 silly addNameRange     '1.0.0-rc.1',
+184 silly addNameRange     '1.0.0-rc.2',
+184 silly addNameRange     '1.0.0-rc.3',
+184 silly addNameRange     '1.0.0',
+184 silly addNameRange     '1.0.1',
+184 silly addNameRange     '1.1.0',
+184 silly addNameRange     '1.1.1',
+184 silly addNameRange     '1.2.0',
+184 silly addNameRange     '1.2.1',
+184 silly addNameRange     '1.3.0',
+184 silly addNameRange     '1.3.1',
+184 silly addNameRange     '2.0.0',
+184 silly addNameRange     '2.1.0',
+184 silly addNameRange     '2.2.0',
+184 silly addNameRange     '2.2.1',
+184 silly addNameRange     '2.3.0',
+184 silly addNameRange     '2.4.0',
+184 silly addNameRange     '2.4.1',
+184 silly addNameRange     '3.0.0',
+184 silly addNameRange     '3.0.1',
+184 silly addNameRange     '3.1.0',
+184 silly addNameRange     '3.2.0',
+184 silly addNameRange     '3.3.0',
+184 silly addNameRange     '3.3.1',
+184 silly addNameRange     '3.4.0',
+184 silly addNameRange     '3.5.0',
+184 silly addNameRange     '3.6.0',
+184 silly addNameRange     '1.0.2',
+184 silly addNameRange     '3.7.0',
+184 silly addNameRange     '2.4.2',
+184 silly addNameRange     '3.8.0',
+184 silly addNameRange     '3.9.0',
+184 silly addNameRange     '3.9.1',
+184 silly addNameRange     '3.9.2',
+184 silly addNameRange     '3.9.3',
+184 silly addNameRange     '3.10.0',
+184 silly addNameRange     '3.10.1',
+184 silly addNameRange     '4.0.0',
+184 silly addNameRange     '4.0.1',
+184 silly addNameRange     '4.1.0',
+184 silly addNameRange     '4.2.0',
+184 silly addNameRange     '4.2.1',
+184 silly addNameRange     '4.3.0',
+184 silly addNameRange     '4.4.0',
+184 silly addNameRange     '4.5.0',
+184 silly addNameRange     '4.5.1',
+184 silly addNameRange     '4.6.0',
+184 silly addNameRange     '4.6.1',
+184 silly addNameRange     '4.7.0',
+184 silly addNameRange     '4.8.0',
+184 silly addNameRange     '4.8.1',
+184 silly addNameRange     '4.8.2',
+184 silly addNameRange     '4.9.0',
+184 silly addNameRange     '4.10.0',
+184 silly addNameRange     '4.11.0',
+184 silly addNameRange     '4.11.1',
+184 silly addNameRange     '4.11.2',
+184 silly addNameRange     '4.12.0',
+184 silly addNameRange     '4.13.0',
+184 silly addNameRange     '4.13.1',
+184 silly addNameRange     '4.14.0',
+184 silly addNameRange     '4.14.1',
+184 silly addNameRange     '4.14.2',
+184 silly addNameRange     '4.15.0',
+184 silly addNameRange     '4.16.0',
+184 silly addNameRange     '4.16.1',
+184 silly addNameRange     '4.16.2',
+184 silly addNameRange     '4.16.3',
+184 silly addNameRange     '4.16.4',
+184 silly addNameRange     '4.16.5',
+184 silly addNameRange     '4.16.6',
+184 silly addNameRange     '4.17.0',
+184 silly addNameRange     '4.17.1',
+184 silly addNameRange     '4.17.2',
+184 silly addNameRange     '4.17.3',
+184 silly addNameRange     '4.17.4',
+184 silly addNameRange     '4.17.5' ] ]
+185 verbose addNamed [ 'lodash', '4.17.5' ]
+186 verbose addNamed [ '4.17.5', '4.17.5' ]
+187 silly lockFile c51bcdca-lodash-4-17-5 lodash@4.17.5
+188 verbose lock lodash@4.17.5 C:\Users\abc\AppData\Roaming\npm-cache\c51bcdca-lodash-4-17-5.lock
+189 http 304 https://registry.npmjs.org/contentful-sdk-core
+190 silly registry.get cb [ 304,
+190 silly registry.get   { date: 'Sun, 15 Apr 2018 07:42:45 GMT',
+190 silly registry.get     via: '1.1 varnish',
+190 silly registry.get     'cache-control': 'max-age=300',
+190 silly registry.get     etag: '"5a9e6bdf-3ad61"',
+190 silly registry.get     age: '5880',
+190 silly registry.get     connection: 'keep-alive',
+190 silly registry.get     'x-served-by': 'cache-ams4441-AMS',
+190 silly registry.get     'x-cache': 'HIT',
+190 silly registry.get     'x-cache-hits': '1',
+190 silly registry.get     'x-timer': 'S1523778166.689422,VS0,VE6',
+190 silly registry.get     vary: 'Accept-Encoding, Accept' } ]
+191 verbose etag contentful-sdk-core from cache
+192 silly addNameRange number 2 { name: 'contentful-sdk-core',
+192 silly addNameRange   range: '>=5.0.4-0 <6.0.0-0',
+192 silly addNameRange   hasData: true }
+193 silly addNameRange versions [ 'contentful-sdk-core',
+193 silly addNameRange   [ '1.0.0',
+193 silly addNameRange     '1.1.0',
+193 silly addNameRange     '1.2.0',
+193 silly addNameRange     '1.2.1',
+193 silly addNameRange     '2.0.0',
+193 silly addNameRange     '2.1.0',
+193 silly addNameRange     '2.1.1',
+193 silly addNameRange     '2.1.2',
+193 silly addNameRange     '2.2.0',
+193 silly addNameRange     '2.2.1',
+193 silly addNameRange     '2.2.2',
+193 silly addNameRange     '2.2.3',
+193 silly addNameRange     '2.2.4',
+193 silly addNameRange     '2.2.5',
+193 silly addNameRange     '2.3.0',
+193 silly addNameRange     '2.3.1',
+193 silly addNameRange     '2.3.2',
+193 silly addNameRange     '2.3.3',
+193 silly addNameRange     '2.3.4',
+193 silly addNameRange     '2.4.0',
+193 silly addNameRange     '2.5.0',
+193 silly addNameRange     '3.5.0',
+193 silly addNameRange     '3.5.1',
+193 silly addNameRange     '3.5.2',
+193 silly addNameRange     '3.5.4',
+193 silly addNameRange     '3.5.5',
+193 silly addNameRange     '3.5.6',
+193 silly addNameRange     '3.5.7',
+193 silly addNameRange     '3.5.8',
+193 silly addNameRange     '3.5.9',
+193 silly addNameRange     '3.5.10',
+193 silly addNameRange     '3.5.11',
+193 silly addNameRange     '3.6.0',
+193 silly addNameRange     '3.6.1',
+193 silly addNameRange     '3.7.0',
+193 silly addNameRange     '3.8.0',
+193 silly addNameRange     '3.8.1',
+193 silly addNameRange     '3.8.2',
+193 silly addNameRange     '3.8.3',
+193 silly addNameRange     '3.9.0',
+193 silly addNameRange     '3.10.0',
+193 silly addNameRange     '3.10.1',
+193 silly addNameRange     '3.11.0',
+193 silly addNameRange     '3.11.1',
+193 silly addNameRange     '3.12.0',
+193 silly addNameRange     '3.12.1',
+193 silly addNameRange     '3.12.2',
+193 silly addNameRange     '3.13.0',
+193 silly addNameRange     '3.13.1',
+193 silly addNameRange     '3.12.3',
+193 silly addNameRange     '3.13.2',
+193 silly addNameRange     '3.13.3',
+193 silly addNameRange     '3.13.4',
+193 silly addNameRange     '4.0.0',
+193 silly addNameRange     '3.14.0',
+193 silly addNameRange     '3.14.1',
+193 silly addNameRange     '3.14.2',
+193 silly addNameRange     '4.0.0-rc2',
+193 silly addNameRange     '4.0.0-rc3',
+193 silly addNameRange     '4.0.0-rc4',
+193 silly addNameRange     '3.14.3',
+193 silly addNameRange     '4.0.0-rc5',
+193 silly addNameRange     '4.0.0-rc6',
+193 silly addNameRange     '3.14.4',
+193 silly addNameRange     '5.0.0',
+193 silly addNameRange     '5.0.1',
+193 silly addNameRange     '5.0.2',
+193 silly addNameRange     '5.0.3',
+193 silly addNameRange     '5.0.4',
+193 silly addNameRange     '6.0.0-beta0',
+193 silly addNameRange     '6.0.0-beta1' ] ]
+194 verbose addNamed [ 'contentful-sdk-core', '5.0.4' ]
+195 verbose addNamed [ '5.0.4', '5.0.4' ]
+196 silly lockFile 094479dc-contentful-sdk-core-5-0-4 contentful-sdk-core@5.0.4
+197 verbose lock contentful-sdk-core@5.0.4 C:\Users\abc\AppData\Roaming\npm-cache\094479dc-contentful-sdk-core-5-0-4.lock
+198 silly lockFile c51bcdca-lodash-4-17-5 lodash@4.17.5
+199 silly lockFile c51bcdca-lodash-4-17-5 lodash@4.17.5
+200 silly lockFile f25314eb-lodash-4-17-4 lodash@^4.17.4
+201 silly lockFile f25314eb-lodash-4-17-4 lodash@^4.17.4
+202 silly lockFile 094479dc-contentful-sdk-core-5-0-4 contentful-sdk-core@5.0.4
+203 silly lockFile 094479dc-contentful-sdk-core-5-0-4 contentful-sdk-core@5.0.4
+204 silly lockFile 92a4f0d2-contentful-sdk-core-5-0-4 contentful-sdk-core@^5.0.4
+205 silly lockFile 92a4f0d2-contentful-sdk-core-5-0-4 contentful-sdk-core@^5.0.4
+206 http 404 https://registry.npmjs.org/contentful/axios
+207 silly registry.get cb [ 404,
+207 silly registry.get   { 'content-type': 'application/json',
+207 silly registry.get     'cache-control': 'max-age=0',
+207 silly registry.get     'content-length': '2',
+207 silly registry.get     'accept-ranges': 'bytes',
+207 silly registry.get     date: 'Sun, 15 Apr 2018 07:42:47 GMT',
+207 silly registry.get     via: '1.1 varnish',
+207 silly registry.get     age: '0',
+207 silly registry.get     connection: 'keep-alive',
+207 silly registry.get     'x-served-by': 'cache-ams4120-AMS',
+207 silly registry.get     'x-cache': 'MISS',
+207 silly registry.get     'x-cache-hits': '0',
+207 silly registry.get     'x-timer': 'S1523778167.005908,VS0,VE764',
+207 silly registry.get     vary: 'Accept-Encoding' } ]
+208 silly addNameRange number 2 { name: 'contentful/axios',
+208 silly addNameRange   range: '>=0.18.0-0 <0.19.0-0',
+208 silly addNameRange   hasData: true }
+209 silly addNameRange versions [ undefined, [] ]
+210 error TypeError: Cannot read property 'latest' of undefined
+210 error     at next (C:\Users\abc\AppData\Roaming\nvm\v0.10.26\node_modules\npm\lib\cache.js:744:35)
+210 error     at C:\Users\abc\AppData\Roaming\nvm\v0.10.26\node_modules\npm\lib\cache.js:732:5
+210 error     at saved (C:\Users\abc\AppData\Roaming\nvm\v0.10.26\node_modules\npm\node_modules\npm-registry-client\lib\get.js:148:7)
+210 error     at C:\Users\abc\AppData\Roaming\nvm\v0.10.26\node_modules\npm\node_modules\graceful-fs\polyfills.js:133:7
+210 error     at Object.oncomplete (fs.js:107:15)
+211 error If you need help, you may report this *entire* log,
+211 error including the npm and node versions, at:
+211 error     <http://github.com/npm/npm/issues>
+212 error System Windows_NT 6.1.7600
+213 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "contentful-management" "--save"
+214 error cwd E:\safal-kisan
+215 error node -v v0.10.26
+216 error npm -v 1.4.3
+217 error type non_object_property_load
+218 verbose exit [ 1, true ]

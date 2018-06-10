@@ -1,0 +1,21 @@
+{
+  "name": "safal-kisan",
+  "version": "0.0.0",
+  "description": "e-commerce site for safal kisan",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "Aamod P. Pisat, Kunal Pingle",
+  "license": "ISC",
+  "dependencies": {
+    "consolidate": "^0.15.1",
+    "contentful": "5.1.3",
+    "contentful-management": "4.2.2",
+    "express": "4.16.3",
+    "lodash": "4.17.5",
+    "nunjucks": "3.1.2",
+    "pagedown": "^1.1.0",
+    "when": "^3.7.8"
+  }
+}

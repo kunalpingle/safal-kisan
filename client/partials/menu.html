@@ -1,0 +1,23 @@
+<div class=" h_menu4">
+    <ul class="memenu skyblue">
+        <% if entry.menu and entry.menu.length %> <% for menu in entry.menu %>
+        <li>
+            <a class="color4" href="<$ menu.url $>"><$ menu.name $></a> <% if menu.child_menus and menu.child_menus.length %>
+            <div class="mepanel">
+                <div class="row">
+                    <div class="col1">
+                        <div class="h_nav">
+                            <ul>
+                                <% for submenu in menu.child_menus %>
+                                <li><a href="<$ submenu.url $>"><$ submenu.name $></a></li>
+                                <% endfor %>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <% endif %> <% endfor %>
+        </li>
+        <% endif %>
+    </ul>
+</div>

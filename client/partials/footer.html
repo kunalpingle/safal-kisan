@@ -1,0 +1,29 @@
+<div class="footer w3layouts">
+    <div class="container">
+        <div class="footer-top-at w3">
+            <div class="col-md-3 amet-sed w3l">
+                <h4>MORE INFO</h4>
+                <ul class="nav-bottom">
+                    <% if entry.menu and entry.menu.length %> <% for menu in entry.menu %>
+                    <li><a href="<$ menu.url $>"><$ menu.name $></a></li>
+                    <% endfor %> <% endif %>
+                </ul>
+            </div>
+            <div class="col-md-3 amet-sed w3ls">
+            </div>
+            <div class="col-md-3 amet-sed agileits">
+            </div>
+            <div class="col-md-3 amet-sed agileits-w3layouts">
+                <h4>CONTACT US</h4>
+                <p>
+                    <$ entry.contactUs $>
+
+                </p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div class="footer-class w3-agile">
+        <p>© 2018 Safal Kisan . All Rights Reserved | Design by ....</p>
+    </div>
+</div>

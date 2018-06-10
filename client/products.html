@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SAFAL KISAN | Products </title>
+    <link href="/static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="/static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/js/angular.min.js"></script>
+    <script type="text/javascript" src="/static/js/cart.js"></script>
+    <!-- Custom Theme files -->
+    <!--theme-style-->
+    <link href="/static/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!--//theme-style-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="application/x-javascript">
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!--fonts-->
+    <link href='//fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+    <!--//fonts-->
+    <!-- start menu -->
+    <link href="/static/css/memenu.css" rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript" src="/static/js/memenu.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".memenu").memenu();
+        });
+    </script>
+</head>
+
+<body ng-app="myApp" data-ng-controller="CartController">
+    <!--header-->
+    <% include "partials/header.html" %>
+        </div>
+        <!-- products -->
+        <!-- grow -->
+        <div class="grow">
+            <div class="container">
+                <h2>Products</h2>
+            </div>
+        </div>
+        <!-- grow -->
+        <div class="pro-du">
+            <div class="container">
+                <div class="col-md-9 product1">
+                    <% if products and products.length %>
+                        <% for product in products %>
+                            <% if loop.index <= 0 %>
+                                <div class=" bottom-product">
+                                    <div class="col-md-6 bottom-cd simpleCart_shelfItem">
+                                        <div class="product-at ">
+                                            <a href="/products/<$ product.fields.url $>"><img class="img-responsive" src="<$ product.fields.image[0].fields.file.url $>" alt="">
+                                <div class="pro-grid">
+                                    <span class="buy-in">Buy Now</span>
+                                </div>
+                            </a>
+                                        </div>
+                                        <p class="tun"><span><$ product.fields.title $></span><br></p>
+                                        <div class="ca-rt">
+                                            <a href="#" class="item_add">
+                                                <p class="number item_price"><i> </i>Rs.
+                                                    <$ product.fields.price $>
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="clearfix"> </div>
+                                </div>
+                                <div class="clearfix"> </div>
+
+                                <% elseif loop.index <= products.length and loop.index> 0 %>
+                                    <div class="col-md-6 bottom-cd simpleCart_shelfItem">
+                                        <div class="product-at ">
+                                            <a href="/products/<$ product.fields.url $>"><img class="img-responsive" src="<$ product.fields.image[0].fields.file.url $>" alt="">
+                                <div class="pro-grid">
+                                    <span class="buy-in">Buy Now</span>
+                                </div>
+                            </a>
+                                        </div>
+                                        <p class="tun"><span><$ product.fields.title $></span><br></p>
+                                        <div class="ca-rt">
+                                            <a href="#" class="item_add">
+                                                <p class="number item_price"><i> </i>Rs.
+                                                    <$ product.fields.price $>
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+
+                                    <% endif %>
+                                        <% endfor %>
+
+                                            <!-- {% for product in products %}
+				 {% if loop.index <= products.length and loop.index > 0 %} 
+                <div class="col-md-6 bottom-cd simpleCart_shelfItem">
+                        <div class="product-at ">
+                            <a href="/products/<$ product.fields.url $>"><img class="img-responsive" src="<$ product.fields.image[0].fields.file.url $>" alt="">
+                                <div class="pro-grid">
+                                    <span class="buy-in">Buy Now</span>
+                                </div>
+                            </a>
+                        </div>
+                        <p class="tun"><span><$ product.fields.title $></span><br></p>
+                        <div class="ca-rt">
+                            <a href="#" class="item_add">
+                                <p class="number item_price"><i> </i>Rs. <$ product.fields.price $></p>
+                            </a>
+                        </div>
+                        <div class="clearfix"></div>
+                </div>
+                {% endif %}
+             {% endfor %} -->
+
+                                            <% endif %>
+                </div>
+                <div class="col-md-3 prod-rgt">
+                    <div class=" pro-tp">
+                        <div class="pl-lft">
+                            <a href="single.html"><img class="img-responsive" src="images/l2.jpg" alt=""></a>
+                        </div>
+                        <div class="pl-rgt">
+                            <h6><a href="single.html">Carrot</a></h6>
+                            <p><a href="single.html">Views: 2100 </a></p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class=" pro-tp">
+                        <div class="pl-lft">
+                            <a href="single.html"><img class="img-responsive" src="images/l3.jpg" alt=""></a>
+                        </div>
+                        <div class="pl-rgt">
+                            <h6><a href="single.html">Potato</a></h6>
+                            <p><a href="single.html">Views: 3000</a></p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class=" pro-tp">
+                        <div class="pl-lft">
+                            <a href="single.html"><img class="img-responsive" src="images/l1.jpg" alt=""></a>
+                        </div>
+                        <div class="pl-rgt">
+                            <h6><a href="single.html">Mango</a></h6>
+                            <p><a href="single.html">Views: 5000</a></p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+
+
+
+                    <div class="pr-btm">
+                        <h4>Biggest Selling Product</h4>
+                        <img class="img-responsive" src="images/s1.jpg" alt="">
+                        <h6>Orange</h6>
+                        <p>Details of product or quality.</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <!-- footer -->
+        <% include "partials/footer.html" %>
+</body>
+
+</html>

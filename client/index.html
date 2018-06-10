@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <$ entry.title $> | Home </title>
+    <link href="/static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="/static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/js/angular.min.js"></script>
+    <script type="text/javascript" src="/static/js/cart.js"></script>
+    <!-- Custom Theme files -->
+    <!--theme-style-->
+    <link href="/static/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!--//theme-style-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="farmers, kisan, safal kisan" />
+    <script type="application/x-javascript">
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!--fonts-->
+    <link href='//fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+    <!--//fonts-->
+    <!-- start menu -->
+    <link href="/static/css/memenu.css" rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript" src="/static/js/memenu.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".memenu").memenu();
+        });
+    </script>
+</head>
+
+<body ng-app="myApp" data-ng-controller="CartController">
+    <!-- ths is header part, so include it here-->
+    <% include "partials/header.html" %>
+        <div class="banner">
+            <!-- ths is slider section part -->
+            <div class="container">
+                <script src="/static/js/responsiveslides.min.js"></script>
+                <script>
+                    $(function() {
+                        $("#slider").responsiveSlides({
+                            auto: true,
+                            nav: false,
+                            speed: 500,
+                            namespace: "callbacks",
+                            pager: false,
+                        });
+                    });
+                </script>
+                <div id="top" class="callbacks_container">
+                    <ul class="rslides" id="slider">
+                        <li>
+                            <div class="banner-text">
+                                <h3>
+                                    <$ entry.bannerTitle $>
+                                </h3>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- main content along with footer -->
+            <div class="container">
+                <!-- main content -->
+                <div class="cont">
+                    <div class="content">
+                        <div class="content-top">
+                            <h1>FEATURE PRODUCTS</h1>
+                            <div class="grid-in">
+                                <% if featuredProducts and featuredProducts.length %>
+                                    <% for _product in featuredProducts %>
+                                        <div class="col-md-3 grid-top simpleCart_shelfItem">
+                                            <a href="/products/<$ _product.fields.url $>" class="b-link-stripe b-animate-go  thickbox">
+                                                <% for i in _product.fields.image %>
+                                                    <img class="img-responsive" src="<$ i.fields.file.url $>" alt="">
+                                                    <% endfor %>
+                                                        <div class="b-wrapper">
+                                                            <h3 class="b-animate b-from-left    b-delay03 ">
+                                                                <span><$ _product.fields.title $></span>
+                                                            </h3>
+                                                        </div>
+                                            </a>
+                                            <p>
+                                                <a href="/products/<$_product.fields.url $>">
+                                                    <$ _product.fields.title $>
+                                                </a>
+                                            </p>
+                                            <a href="#" class="item_add">
+                                                <p class="number item_price"><i> </i><span>Rs <$ _product.fields.price $></span></p>
+                                            </a>
+                                        </div>
+                                        <% endfor %>
+                                            <% endif %>
+                                                <div class="clearfix"> </div>
+                            </div>
+                        </div>
+                        <div class="content-top">
+                            <h1>NEW PRODUCTS</h1>
+                            <div class="grid-in">
+                                <% if newProducts and newProducts.length %>
+                                    <% for _product in newProducts %>
+                                        <div class="col-md-3 grid-top simpleCart_shelfItem">
+                                            <a href="/products/<$ _product.fields.url $>" class="b-link-stripe b-animate-go  thickbox">
+                                    <img class="img-responsive" src="<$ _product.fields.image[0].fields.file.url $>" alt="">
+                                    <div class="b-wrapper">
+                                        <h3 class="b-animate b-from-left    b-delay03 ">
+                                            <span><$ _product.fields.title $></span>
+                                        </h3>
+                                    </div>
+                                </a>
+                                            <p>
+                                                <a href="/products/<$ _product.fields.url $>">
+                                                    <$ _product.fields.title $>
+                                                </a>
+                                            </p>
+                                            <a href="#" class="item_add">
+                                                <p class="number item_price"><i> </i><span>Rs <$ _product.fields.price $></span></p>
+                                            </a>
+                                        </div>
+                                        <% endfor %>
+                                            <% endif %>
+                                                <div class="clearfix"> </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- ths is footer part, so include it here-->
+                <% include "partials/footer.html" %>
+            </div>
+</body>
+
+</html>
